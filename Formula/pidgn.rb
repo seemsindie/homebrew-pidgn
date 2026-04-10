@@ -1,21 +1,21 @@
 class Pidgn < Formula
   desc "CLI tool for the Pidgn web framework — project scaffolding, dev server, migrations, and more"
   homepage "https://github.com/seemsindie/pidgn_cli"
-  version "0.3.1-beta.15"
+  version "0.3.1-beta.16"
   license "MIT"
 
   on_macos do
     url "https://github.com/seemsindie/pidgn_cli/releases/download/v#{version}/pidgn-cli-v#{version}-aarch64-macos.tar.gz"
-    sha256 "8e3a9ef6f7300891e51383d9bd0ca94bd8bc6222f131c08714539070664fca54"
+    sha256 "4e04436bb267aa97b752fced3bba4aa8dc027428cee047e8b41166d61359b6a9"
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/seemsindie/pidgn_cli/releases/download/v#{version}/pidgn-cli-v#{version}-aarch64-linux.tar.gz"
-      sha256 "5683e24a3e0fa00b24475484757a420b704318f7f1e495a4e1f0644e6bece873"
+      sha256 "95219ccd9cfad33dbb495cd665d7f420b89968693be159a4aae85e4f6acb59eb"
     else
       url "https://github.com/seemsindie/pidgn_cli/releases/download/v#{version}/pidgn-cli-v#{version}-x86_64-linux.tar.gz"
-      sha256 "53e6e3cde61985c35142852abc01bc1ebb9997c696278535d5421da47d9613f1"
+      sha256 "ecffd0c07ed9facccaa3179913623bef37aaced028bd9631dc90da4f1f25db65"
     end
   end
 
